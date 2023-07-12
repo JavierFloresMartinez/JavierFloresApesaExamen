@@ -14,7 +14,7 @@ namespace BL
           
             ML.Result result = new ML.Result();
             ML.vacio vacio = new ML.vacio();
-            result.Objects = new List<object>();
+            result.Object = new object();
             
             try
             {
@@ -24,7 +24,7 @@ namespace BL
 
                 if (vacio.Mensaje == null)
                 {
-                    result.Objects.Add(usuario);
+                    result.Object =usuario;
                 }
                 else
                 {

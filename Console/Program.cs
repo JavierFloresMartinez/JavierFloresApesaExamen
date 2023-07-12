@@ -30,7 +30,7 @@ do
             ML.Result result = BL.Usuario.Add(usuario);
             if (result.Correct)
             {
-                usuario.Usuarios.Add(result.Objects);
+                usuario.Usuarios.Add(result.Object);
                
             }
             break;
@@ -41,6 +41,8 @@ do
                 Console.WriteLine("Nombre Completo: " + usuario1.NombreCompleto);
                 Console.WriteLine("Fecha de nacimiento: " + usuario1.FechaNacimiento);
                 Console.WriteLine("Correo Electronico: " + usuario1.CorreoElectronico);
+                Console.WriteLine("");
+                Console.WriteLine("");
             }
             break;
         default:
